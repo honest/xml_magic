@@ -66,11 +66,13 @@ module CommonThread
 
       private
       def evaluate(name, selection)
-        
-        if @element.is_a?(::Array)
-          elements = @element[0].get_elements(@namespace + name)
+        name = "#{@namespace}#{name}"
+        elements = if @element.is_a?(::Array)
+          @element[0].get_elements(name)
+        elsif !@element.nil?
+          @element.get_elements(name)
         else
-          elements = @element.get_elements(@namespace + name)
+          []
         end
         
         if elements.empty?
