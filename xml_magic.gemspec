@@ -9,5 +9,5 @@ Gem::Specification.new do |s|
    s.rubyforge_project = %q{xml-magic}
    s.has_rdoc = true
    s.description = %q{xml-magic makes accessing xml objects more like any other ruby object}
-   s.files = [ "README", "CHANGELOG", "LICENSE", "demo.rb", "lib/xml_magic.rb", "lib/common_thread/xml/xml_magic.rb", "test/test_helper.rb", "test/test_xml_magic.rb" ]
+   s.files = [ "README.rdoc", "CHANGELOG", "LICENSE", "demo.rb", "lib/xml_magic.rb", "lib/common_thread/xml/xml_magic.rb", "test/test_helper.rb", "test/test_xml_magic.rb" ]
 end
